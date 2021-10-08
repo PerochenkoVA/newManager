@@ -40,7 +40,6 @@ public class ManagerTesting {
     }
 
     @Test
-
     public void shouldSearcyBySmartphone() {
 
         Product[] expected = new Product[]{samsung};
@@ -49,7 +48,6 @@ public class ManagerTesting {
     }
 
     @Test
-
     public void shouldSearcyByAuthor() {
 
         Product[] expected = new Product[]{book1};
@@ -58,7 +56,6 @@ public class ManagerTesting {
     }
 
     @Test
-
     public void shouldSearcyByManufactory() {
 
         Product[] expected = new Product[]{iPhone};
@@ -67,7 +64,6 @@ public class ManagerTesting {
     }
 
     @Test
-
     public void shouldSearcyByBookName() {
 
         Product[] expected = new Product[]{book3};
@@ -76,7 +72,6 @@ public class ManagerTesting {
     }
 
     @Test
-
     public void shouldSearcyByNotExistBook() {
 
         Product[] expected = new Product[]{};
@@ -85,7 +80,6 @@ public class ManagerTesting {
     }
 
     @Test
-
     public void shouldSearcyByMoreBook() {
 
         Product[] expected = new Product[]{book2, book4};

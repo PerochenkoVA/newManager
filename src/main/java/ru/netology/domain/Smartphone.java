@@ -3,7 +3,8 @@ package ru.netology.domain;
 import java.util.Objects;
 
 public class Smartphone extends Product{
-   private String manufacturer;
+    private static String manufacturer;
+    //private String manufacturer;
 
     public Smartphone(int id, String name, int price, String manufacturer) {
         super(id, name, price);
@@ -14,7 +15,7 @@ public class Smartphone extends Product{
         super();
     }
 
-    public String getManufacturer() {
+    public static String getManufacturer() {
         return manufacturer;
     }
 
