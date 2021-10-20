@@ -1,10 +1,6 @@
-package domain;
+package ru.netology.domain;
 
 import org.junit.jupiter.api.Test;
-import ru.netology.domain.Product;
-import ru.netology.domain.Smartphone;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class Book extends Product {
     @Test
@@ -27,5 +23,3 @@ public class Book extends Product {
         product.toString();
     }
 }
-
-//конец

@@ -1,7 +1,6 @@
-package domain;
+package ru.netology.domain;
 
 import org.junit.jupiter.api.Test;
-import ru.netology.domain.Product;
 
 public class Smartphone extends Product {
     @Test
