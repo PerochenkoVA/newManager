@@ -1,17 +1,13 @@
-package manager.manader;
+package manager;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.domain.Book;
 import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;
 import ru.netology.manager.ProductManager;
-import ru.netology.repository.NotFoundException;
 import ru.netology.repository.ProductRepository;
 
-
-import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
@@ -43,7 +39,7 @@ public class ManagerTesting {
     public void shouldSearcyBySmartphone() {
 
         Product[] expected = new Product[]{samsung};
-        Product[] actual = manager.searcyBy("Galaxy");
+        Product[] actual = manager.searchBy("Galaxy");
         assertArrayEquals(expected, actual);
     }
 
@@ -51,7 +47,7 @@ public class ManagerTesting {
     public void shouldSearcyByAuthor() {
 
         Product[] expected = new Product[]{book1};
-        Product[] actual = manager.searcyBy("Тургенев И.С.");
+        Product[] actual = manager.searchBy("Тургенев И.С.");
         assertArrayEquals(expected, actual);
     }
 
@@ -59,7 +55,7 @@ public class ManagerTesting {
     public void shouldSearcyByManufactory() {
 
         Product[] expected = new Product[]{iPhone};
-        Product[] actual = manager.searcyBy("Apple");
+        Product[] actual = manager.searchBy("Apple");
         assertArrayEquals(expected, actual);
     }
 
@@ -67,7 +63,7 @@ public class ManagerTesting {
     public void shouldSearcyByBookName() {
 
         Product[] expected = new Product[]{book3};
-        Product[] actual = manager.searcyBy("Сто лет одиночества");
+        Product[] actual = manager.searchBy("Сто лет одиночества");
         assertArrayEquals(expected, actual);
     }
 
@@ -75,7 +71,7 @@ public class ManagerTesting {
     public void shouldSearcyByNotExistBook() {
 
         Product[] expected = new Product[]{};
-        Product[] actual = manager.searcyBy("Важные годы");
+        Product[] actual = manager.searchBy("Важные годы");
         assertArrayEquals(expected, actual);
     }
 
@@ -83,7 +79,7 @@ public class ManagerTesting {
     public void shouldSearcyByMoreBook() {
 
         Product[] expected = new Product[]{book2, book4};
-        Product[] actual = manager.searcyBy("Мастер и Маргарита");
+        Product[] actual = manager.searchBy("Мастер и Маргарита");
         assertArrayEquals(expected, actual);
     }
 }

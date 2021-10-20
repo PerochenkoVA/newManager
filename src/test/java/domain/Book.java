@@ -17,7 +17,7 @@ public class Book extends Product {
         Product product = new Book();
         if (product instanceof Book) {
             Book book = (Book) product;
-//      book.
+
         }
     }
 
