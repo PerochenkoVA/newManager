@@ -27,3 +27,5 @@ public class Book extends Product {
         product.toString();
     }
 }
+
+//конец

@@ -11,14 +11,17 @@ public class Smartphone extends Product {
     }
 
     public Smartphone() {
+
         super();
     }
 
-    public static String getManufacturer() {
+    public String getManufacturer() {
+
         return manufacturer;
     }
 
     public void setManufacturer(String manufacturer) {
+
         this.manufacturer = manufacturer;
     }
 
@@ -33,6 +36,7 @@ public class Smartphone extends Product {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(super.hashCode(), manufacturer);
     }
 

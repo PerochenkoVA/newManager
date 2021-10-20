@@ -14,11 +14,12 @@ public class Book extends Product {
         super();
     }
 
-    public static String getAuthor() {
+    public String getAuthor() {
         return author;
     }
 
     public void setAuthor(String author) {
+
         this.author = author;
     }
 
@@ -33,6 +34,7 @@ public class Book extends Product {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(super.hashCode(), author);
     }
 
