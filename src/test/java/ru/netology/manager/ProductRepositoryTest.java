@@ -10,7 +10,7 @@ import ru.netology.repository.ProductRepository;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class ProductRepositoryTesting {
+public class ProductRepositoryTest {
 
     private ProductRepository repository = new ProductRepository();
     private Book book1 = new Book(1, "Отци и дети", 500, "Тургенев И.С.");

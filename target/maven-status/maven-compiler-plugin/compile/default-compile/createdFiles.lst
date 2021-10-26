@@ -1,4 +1,5 @@
 ru\netology\domain\Product.class
+ru\netology\repository\NotFoundException.class
 ru\netology\repository\ProductRepository.class
 ru\netology\domain\Book.class
 ru\netology\manager\ProductManager.class
